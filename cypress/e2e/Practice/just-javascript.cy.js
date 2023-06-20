@@ -5,7 +5,7 @@ const sortedPosts = (posts) => {
 	return posts.sort((a, b) => new Date(b.date).valueOf() - new Date(a.date).valueOf());
 };
 
-describe('Cypress is just JavaScript', () => {
+describe('Cypress is just JavaScript', { browser: ['firefox', 'chrome'] }, () => {
 	beforeEach(() => {
 		cy.visit('http://localhost:3000');
 	});

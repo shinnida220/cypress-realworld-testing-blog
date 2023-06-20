@@ -54,46 +54,46 @@ describe('Network Requests', () => {
 		});
 	});
 
-	it.only('intercepts /api/posts and returns the correct number of posts', () => {
-		// Wait upon the @posts intercept that happens in the beforeEach()
-		// and assert that the response contains the correct number of posts
-		// Hint: you will need to cy.wait() to wait upon the @posts alias.
-		// https://docs.cypress.io/api/commands/wait
-		// cy.wait('@posts').then((d) => {
-		// 	console.log({ d });
-		// 	// expect(d.length).to.eq(2);
-		// });
-		// cy.wait('@posts').then((response) => {
-		// 	console.log({ response });
-		// 	cy.wrap(response).its('response.body').should('have.length', 2);
-		// });
-		// cy.intercept('POST', '/api/posts', (req) => {
-		// 	console.log('Interceptor  post2 called');
-		// 	delete req.headers['if-none-match'];
-		// }).as('post2');
-		// cy.wait('@post2').then((response) => {
-		// 	console.log({ response });
-		// 	cy.wrap(response).its('response.body').should('have.length', 2);
-		// });
-		// cy.wait('@posts').then((response) => {
-		// 	console.log({ response });
-		// 	cy.wrap(response).its('response.body').should('have.length', 2);
-		// });
-		// cy.intercept({
-		// 	method: 'GET',
-		// 	url: '/api/posts'
-		// }).as('apiCheck');
-		// cy.request('http://localhost:3000/api/posts');
-		// cy.wait('@apiCheck').then((interception) => {
-		// 	assert.isNotNull(interception.response.body, '1st API call has data');
-		// });
-		// cy.wait('@apiCheck').then((interception) => {
-		// 	assert.isNotNull(interception.response.body, '2nd API call has data');
-		// });
-		// cy.wait('@apiCheck').then((interception) => {
-		// 	assert.isNotNull(interception.response.body, '3rd API call has data');
-		// });
-	});
+	// it('intercepts /api/posts and returns the correct number of posts', () => {
+	// Wait upon the @posts intercept that happens in the beforeEach()
+	// and assert that the response contains the correct number of posts
+	// Hint: you will need to cy.wait() to wait upon the @posts alias.
+	// https://docs.cypress.io/api/commands/wait
+	// cy.wait('@posts').then((d) => {
+	// 	console.log({ d });
+	// 	// expect(d.length).to.eq(2);
+	// });
+	// cy.wait('@posts').then((response) => {
+	// 	console.log({ response });
+	// 	cy.wrap(response).its('response.body').should('have.length', 2);
+	// });
+	// cy.intercept('POST', '/api/posts', (req) => {
+	// 	console.log('Interceptor  post2 called');
+	// 	delete req.headers['if-none-match'];
+	// }).as('post2');
+	// cy.wait('@post2').then((response) => {
+	// 	console.log({ response });
+	// 	cy.wrap(response).its('response.body').should('have.length', 2);
+	// });
+	// cy.wait('@posts').then((response) => {
+	// 	console.log({ response });
+	// 	cy.wrap(response).its('response.body').should('have.length', 2);
+	// });
+	// cy.intercept({
+	// 	method: 'GET',
+	// 	url: '/api/posts'
+	// }).as('apiCheck');
+	// cy.request('http://localhost:3000/api/posts');
+	// cy.wait('@apiCheck').then((interception) => {
+	// 	assert.isNotNull(interception.response.body, '1st API call has data');
+	// });
+	// cy.wait('@apiCheck').then((interception) => {
+	// 	assert.isNotNull(interception.response.body, '2nd API call has data');
+	// });
+	// cy.wait('@apiCheck').then((interception) => {
+	// 	assert.isNotNull(interception.response.body, '3rd API call has data');
+	// });
+	// });
 
 	// it.only('intercepts /api/posts and returns the correct number of posts', () => {
 	// 	cy.intercept('GET', '/api/posts', (req) => {
